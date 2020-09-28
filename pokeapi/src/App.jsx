@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/index.scss'
+import PokemonBadge from './components/PokemonBadge'
 
 function App() {
   return (
@@ -13,29 +14,11 @@ function App() {
     </nav>
     <main>
       <section className='results'>
-	
-	<article>
-	  <header>	  
-	    <img
-	    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Pokebola-pokeball-png-0.png"
-	    alt="Pokeball"/>
-	  </header>
-	  <footer>
-	    Pokemon!
-	  </footer>
-	</article>
-	
-	<article>
-	  <header>	  
-	    <img
-	    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Pokebola-pokeball-png-0.png"
-	    alt="Pokeball"/>
-	  </header>
-	  <footer>
-	    Pokemon!
-	  </footer>
-	</article>
-
+        {
+          [].map(() =>{
+            return <PokemonBadge/>
+          })
+        }
       </section>
     </main>
   </>
